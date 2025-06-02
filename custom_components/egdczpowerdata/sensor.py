@@ -23,7 +23,16 @@ BASE_URL = "https://data.distribuce24.cz"
 TOKEN_URL = "https://idm.distribuce24.cz/oauth/token"
 DATA_URL = BASE_URL + "/rest/spotreby"
 
+# Create a custom logger for the component
 _LOGGER = logging.getLogger(__name__)
+_LOGGER.setLevel(logging.DEBUG)
+
+# File handler for writing logs to a file
+file_handler = logging.FileHandler('/config/egddistribuce.log')
+file_handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(message)s')
+file_handler.setFormatter(formatter)
+_LOGGER.addHandler(file_handler)
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     client_id = config.get("client_id")
