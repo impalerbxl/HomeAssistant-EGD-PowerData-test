@@ -118,6 +118,7 @@ class EGDPowerDataSensor(Entity):
                 if response.status < 400:
                     token_data = await response.json()
                     return token_data.get('access_token')
+                    _LOGGER.info(f"---{token_data}---")
                 else:
                     _LOGGER.error("Error retrieving access token")
                     return None
