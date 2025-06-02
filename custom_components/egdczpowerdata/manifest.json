@@ -1,5 +1,5 @@
 {
-    "domain": "egdczpowerdata",
+    "domain": "egdczpowerdata_test",
     "name": "EGDCZ Power Data",
     "version": "0.2",
     "documentation": "https://github.com/ondrejvysek/HomeAssistant-EGD-PowerData",
