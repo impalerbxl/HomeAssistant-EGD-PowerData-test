@@ -1,5 +1,5 @@
 {
-    "name": "EGD Distribuce Power Data",
+    "name": "EGD",
     "country": "CZ",
     "homeassistant": "0.110.0"
 }
