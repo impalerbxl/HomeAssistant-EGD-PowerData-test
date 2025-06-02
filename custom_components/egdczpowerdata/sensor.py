@@ -30,8 +30,8 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     client_secret = config.get("client_secret")
     ean = config.get("ean")
     days = config.get("days")
-    sensor_icc1 = EGDPowerDataSensor(hass, client_id, client_secret, ean, days, "icc1", "mdi:transmission-tower-export")
-    sensor_isc1 = EGDPowerDataSensor(hass, client_id, client_secret, ean, days, "isc1", "mdi:transmission-tower-import")
+    sensor_icc1 = EGDPowerDataSensor(hass, client_id, client_secret, ean, days, "ICC1", "mdi:transmission-tower-export")
+    sensor_isc1 = EGDPowerDataSensor(hass, client_id, client_secret, ean, days, "ISC1", "mdi:transmission-tower-import")
 
     async_add_entities([sensor_icc1, sensor_isc1])
 
