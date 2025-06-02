@@ -12,7 +12,7 @@ import asyncio
 from dateutil import tz
 from collections import defaultdict
 
-DOMAIN = "egdczpowerdata"
+DOMAIN = "egdczpowerdata_test"
 
 from homeassistant.const import (
     EVENT_HOMEASSISTANT_STARTED,
