@@ -10,5 +10,5 @@
     "requirements": [
         "aiohttp"
     ],
-    "icon": "custom_components/egdczpowerdata/icon.svg"
+    "icon": "custom_components/egdczpowerdata_test/icon.svg"
 }
